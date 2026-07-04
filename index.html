@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="img/favicon.png" />
+  <meta name="description" content="こどもプログラミング教室「テック・スマイル」。あそぶように、プログラミング。5歳から通える、楽しい無料体験を随時開催中。山梨県笛吹市。" />
+  <title>テック・スマイル｜こどもプログラミング教室</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Outfit:wght@500;600;700;800&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="shell header__inner">
+      <a href="#hero" class="logo"><img src="img/logo.png" alt="テック・スマイル こどもプログラミング教室" width="144" height="96" /></a>
+
+      <nav class="nav" id="nav" aria-label="メインナビ">
+        <ul class="nav__list">
+          <li><a href="about.html" class="nav__link">テックスマイルとは</a></li>
+          <li><a href="courses.html" class="nav__link">コース・料金</a></li>
+          <li><a href="voice.html" class="nav__link">体験談</a></li>
+          <li><a href="faq.html" class="nav__link">Q&amp;A</a></li>
+          <li><a href="news.html" class="nav__link">お知らせ</a></li>
+          <li><a href="access.html" class="nav__link">アクセス</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary header__cta">無料体験</a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <!-- decorative blobs -->
+      <span class="blob blob--blue js-float" data-speed="0.06"></span>
+      <span class="blob blob--yellow dots js-float" data-speed="-0.05"></span>
+      <span class="blob blob--pink js-float" data-speed="0.08"></span>
+      <span class="blob blob--coral js-float" data-speed="-0.04"></span>
+      <span class="blob blob--sky dots js-float" data-speed="0.05"></span>
+      <span class="blob blob--lime js-float" data-speed="-0.07"></span>
+
+      <div class="shell hero__inner">
+        <p class="hero__eyebrow">こどもプログラミング教室</p>
+        <h1 class="hero__script">Smile &amp; Code</h1>
+        <p class="hero__jp">あそぶように、プログラミング。</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary btn--lg">無料体験にいく</a>
+          <a href="#courses" class="btn btn--ghost btn--lg">コースを見る</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===== News ===== -->
+    <section class="section news" id="news">
+      <div class="shell">
+        <header class="lead lead--center">
+          <h2 class="lead__en">お知らせ</h2>
+          <p class="lead__jp">News &amp; Topics</p>
+        </header>
+        <nav class="news__list">
+          <a href="news-2023-contest.html" class="news__item">
+            <time class="news__date" datetime="2023-01-28">2023.01.28</time>
+            <span class="news__cat">おしらせ</span>
+            <p class="news__title">第5回U-16プログラミングコンテスト優秀賞に、テック・スマイル生が選ばれました！</p>
+          </a>
+          <a href="news-2022-contest.html" class="news__item">
+            <time class="news__date" datetime="2022-01-13">2022.01.13</time>
+            <span class="news__cat">教室風景</span>
+            <p class="news__title">U-16プログラミングコンテスト金賞に、テック・スマイル生が選ばれました！</p>
+          </a>
+          <a href="news-2021-kentei.html" class="news__item">
+            <time class="news__date" datetime="2021-07-06">2021.07.06</time>
+            <span class="news__cat">おしらせ</span>
+            <p class="news__title">プログラミング能力検定が行われます。</p>
+          </a>
+          <a href="news-2021-monodukuri.html" class="news__item">
+            <time class="news__date" datetime="2021-04-05">2021.04.05</time>
+            <span class="news__cat">おしらせ</span>
+            <p class="news__title">身近なものでモノづくりしてみませんか？</p>
+          </a>
+          <a href="news-2020-kodomo.html" class="news__item">
+            <time class="news__date" datetime="2020-11-14">2020.11.14</time>
+            <span class="news__cat">イベント</span>
+            <p class="news__title">県民の日【11/20】に、ななかいこども食堂が開催されます。</p>
+          </a>
+        </nav>
+        <div style="text-align:center;margin-top:28px;">
+          <a href="news.html" class="btn btn--ghost">すべてのお知らせを見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About / 概要 ===== -->
+    <section class="section about" id="about">
+      <span class="blob blob--sky dots blob--deco1 js-float" data-speed="0.05"></span>
+      <div class="shell">
+        <header class="lead">
+          <h2 class="lead__en">What We Do</h2>
+          <p class="lead__jp">テック・スマイルとは</p>
+        </header>
+        <p class="about__catch">コードを覚えるより、<b>つくる楽しさ</b>から。</p>
+
+        <div class="trio">
+          <article class="trio__card">
+            <span class="trio__icon trio__icon--yellow">
+              <svg viewBox="0 0 48 48" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 6v3M13 13l-2-2M35 13l2-2M8 25h3M37 25h3"/>
+                <path d="M19 34h10M20 38h8M22 42h4"/>
+                <path d="M18.5 34c0-3.5-4.5-6.5-4.5-12.5a10 10 0 0 1 20 0c0 6-4.5 9-4.5 12.5z" fill="rgba(43,43,51,.1)"/>
+              </svg>
+            </span>
+            <h3>考える</h3>
+            <p>自分で試して、ひらめく。</p>
+          </article>
+          <article class="trio__card">
+            <span class="trio__icon trio__icon--pink">
+              <svg viewBox="0 0 48 48" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="10" width="36" height="24" rx="3" fill="rgba(255,255,255,.2)"/>
+                <path d="M2 34h44"/>
+                <path d="M17 34l-1.5 4M31 34l1.5 4M13 38h22"/>
+                <path d="M18 24l-4 3 4 3M30 24l4 3-4 3M26 18l-4 10"/>
+              </svg>
+            </span>
+            <h3>つくる</h3>
+            <p>アイデアをプログラムで形に。</p>
+          </article>
+          <article class="trio__card">
+            <span class="trio__icon trio__icon--blue">
+              <svg viewBox="0 0 48 48" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 8l4 8 9 1.3-6.5 6.3 1.5 9L24 28l-8 4.6 1.5-9L11 17.3 20 16z" fill="rgba(43,43,51,.1)"/>
+                <path d="M14 38h20M24 34v6"/>
+              </svg>
+            </span>
+            <h3>たのしむ</h3>
+            <p>夢中になって、自信に。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Courses & Pricing ===== -->
+    <section class="section courses" id="courses">
+      <span class="blob blob--yellow dots blob--deco2 js-float" data-speed="-0.05"></span>
+      <div class="shell">
+        <header class="lead lead--center">
+          <h2 class="lead__en">Courses</h2>
+          <p class="lead__jp">コース・授業料</p>
+        </header>
+
+        <div class="plans">
+          <article class="plan">
+            <span class="plan__emoji plan__emoji--cat">
+              <span class="cat-mascot"><img src="img/scratch.webp" alt="Scratchの猫のキャラクター" width="120" height="120" /></span>
+            </span>
+            <h3 class="plan__name">はじめてのプログラミング</h3>
+            <p class="plan__target">小学3年〜中学3年 / 初心者向け</p>
+            <p class="plan__price"><span class="yen">¥</span>6,500<span class="per">/月（税込）</span></p>
+            <p class="plan__note">入会金 10,000円</p>
+            <ul class="plan__feats">
+              <li>Scratchで簡単なゲーム</li>
+              <li>全12ミッション（24コマ）</li>
+              <li>月2回 / 60分・定員5名程度</li>
+            </ul>
+            <a href="courses.html" class="btn btn--ghost plan__btn">詳しく見る</a>
+          </article>
+
+          <article class="plan">
+            <span class="plan__emoji"><img src="img/course-drill.svg" alt="" width="120" height="120" /></span>
+            <h3 class="plan__name">ドリル</h3>
+            <p class="plan__target">小学3年〜中学3年 / 発展</p>
+            <p class="plan__price"><span class="yen">¥</span>6,500<span class="per">/月（税込）</span></p>
+            <p class="plan__note">入会金 10,000円</p>
+            <ul class="plan__feats">
+              <li>習得した機能で作品づくり</li>
+              <li>全12ミッション（24コマ）</li>
+              <li>月2回 / 60分・定員5名程度</li>
+            </ul>
+            <a href="courses.html" class="btn btn--ghost plan__btn">詳しく見る</a>
+          </article>
+
+          <article class="plan">
+            <span class="plan__emoji"><img src="img/course-rocket.svg" alt="" width="120" height="120" /></span>
+            <h3 class="plan__name">ステップアップ</h3>
+            <p class="plan__target">小学3年〜中学3年 / 発展</p>
+            <p class="plan__price"><span class="yen">¥</span>6,500<span class="per">/月（税込）</span></p>
+            <p class="plan__note">入会金 10,000円</p>
+            <ul class="plan__feats">
+              <li>自分の力でゲームを完成</li>
+              <li>論理的に考える力を養う</li>
+              <li>月2回 / 60分・定員5名程度</li>
+            </ul>
+            <a href="courses.html" class="btn btn--ghost plan__btn">詳しく見る</a>
+          </article>
+
+          <article class="plan">
+            <span class="plan__emoji"><img src="img/course-app.svg" alt="" width="120" height="120" /></span>
+            <h3 class="plan__name">はじめてのアプリ開発</h3>
+            <p class="plan__target">中学3年〜高校3年</p>
+            <p class="plan__price"><span class="yen">¥</span>7,500<span class="per">/月（税込）</span></p>
+            <p class="plan__note">入会金 10,000円</p>
+            <ul class="plan__feats">
+              <li>HTML・CSS・JavaScript</li>
+              <li>Monacaでアプリ制作・全11ミッション</li>
+              <li>月2回 / 60分・定員5名程度</li>
+            </ul>
+            <a href="courses.html" class="btn btn--ghost plan__btn">詳しく見る</a>
+          </article>
+
+          <article class="plan">
+            <span class="plan__emoji"><img src="img/course-code.svg" alt="" width="120" height="120" /></span>
+            <h3 class="plan__name">コードプログラミング</h3>
+            <p class="plan__target">中学3年〜高校3年 / 発展</p>
+            <p class="plan__price"><span class="yen">¥</span>7,500<span class="per">/月（税込）</span></p>
+            <p class="plan__note">入会金 10,000円</p>
+            <ul class="plan__feats">
+              <li>Webサイト・アプリを制作</li>
+              <li>アプリ開発の知識を応用</li>
+              <li>月2回 / 60分・定員5名程度</li>
+            </ul>
+            <a href="courses.html" class="btn btn--ghost plan__btn">詳しく見る</a>
+          </article>
+        </div>
+        <p class="courses__note">月謝は税込（パソコン使用料・テキスト代を含む）／全コース 月2回・60分・各回定員5名程度</p>
+      </div>
+    </section>
+
+    <!-- ===== Voice ===== -->
+    <section class="section voice" id="voice">
+      <span class="blob blob--lime dots blob--deco2 js-float" data-speed="-0.05"></span>
+      <div class="shell">
+        <header class="lead lead--center">
+          <h2 class="lead__en">Voice</h2>
+          <p class="lead__jp">みんなの声</p>
+        </header>
+
+        <div class="voice__grid voice__grid--few">
+          <figure class="voice__card">
+            <div class="voice__stars" aria-label="星5">★★★★★</div>
+            <blockquote>「ゲームづくりがたのしい！」おうちでもつづきをつくっています。</blockquote>
+            <figcaption>ハルトくん（9歳）</figcaption>
+          </figure>
+          <figure class="voice__card">
+            <div class="voice__stars" aria-label="星5">★★★★★</div>
+            <blockquote>「できた！」と喜ぶ顔が毎回見られて嬉しいです。少人数で質問もしやすいみたい。</blockquote>
+            <figcaption>小3の保護者さま</figcaption>
+          </figure>
+          <figure class="voice__card">
+            <div class="voice__stars" aria-label="星5">★★★★★</div>
+            <blockquote>小4から通い始め、プログラミングへの興味がどんどん広がりました。アットホームで楽しく学べます。</blockquote>
+            <figcaption>陽日さん（高校2年）</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq">
+      <div class="shell faq__grid">
+        <header class="lead">
+          <h2 class="lead__en">Q&amp;A</h2>
+          <p class="lead__jp">よくある質問</p>
+        </header>
+
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>どのような講座があるのでしょうか？</summary>
+            <p>Scratchを使用した「はじめてのプログラミングコース」「ドリルコース」「ステップアップコース」、Scratch Jrを使用した「ジュニアプログラミングコース」、テキストコーディングの「はじめてのアプリ開発」「コードプログラミングコース」の6種類です。</p>
+          </details>
+          <details class="faq__item">
+            <summary>プログラミング講座の対象年齢は何歳からですか？</summary>
+            <p>Scratch Jrのコースは5歳から、Scratchのコースは小学校3年生からを想定しています。（対象年齢は目安です。本教室では小学校1年生の生徒さんもScratchのコースに通っています。）</p>
+          </details>
+          <details class="faq__item">
+            <summary>パソコンにあまり慣れていないのですが？</summary>
+            <p>子どもたちに応じて講師がフォローしていきますのでご安心ください。</p>
+          </details>
+          <details class="faq__item">
+            <summary>授業頻度はどれくらいですか？</summary>
+            <p>月2回のレッスンになります。曜日・時間等は入会時に決めていただけます。定員の関係上ご希望に添えない場合もございます。</p>
+          </details>
+          <details class="faq__item">
+            <summary>振り替えはできますか？</summary>
+            <p>はい、前日までにご連絡いただければ対応いたします。</p>
+          </details>
+          <details class="faq__item">
+            <summary>体験会の開催はしていますか？</summary>
+            <p>随時開催しておりますので、お気軽にご連絡ください。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Access ===== -->
+    <section class="section access" id="access">
+      <div class="shell">
+        <header class="lead lead--center">
+          <h2 class="lead__en">Access</h2>
+          <p class="lead__jp">アクセス</p>
+        </header>
+
+        <div class="access__grid">
+          <div class="access__map">
+            <iframe
+              src="https://maps.google.com/maps?q=%E5%B1%B1%E6%A2%A8%E7%9C%8C%E7%AC%9B%E5%90%B9%E5%B8%82%E5%BE%A1%E5%9D%82%E7%94%BA%E4%BA%8C%E4%B9%8B%E5%AE%AE1472-1&hl=ja&z=17&output=embed"
+              title="テック・スマイル 地図"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <dl class="access__info">
+            <div><dt>住所</dt><dd>〒406-0807 山梨県笛吹市御坂町二之宮1472-1</dd></div>
+            <div><dt>電話</dt><dd><a href="tel:09018391748">090-1839-1748（金澤）</a></dd></div>
+            <div><dt>メール</dt><dd><a href="mailto:info@tech-smile.info">info@tech-smile.info</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact" id="contact">
+      <span class="blob blob--blue blob--deco1 js-float" data-speed="0.05"></span>
+      <span class="blob blob--yellow dots blob--deco2 js-float" data-speed="-0.06"></span>
+      <div class="shell">
+        <header class="lead lead--center">
+          <h2 class="lead__en">Join Us</h2>
+          <p class="lead__jp">まずは無料体験へ</p>
+        </header>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="parent">保護者のお名前 <span class="req">必須</span></label>
+            <input type="text" id="parent" name="parent" autocomplete="name" required placeholder="例）スマイル 花子" />
+          </div>
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="email">メール <span class="req">必須</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="smile@example.com" />
+            </div>
+            <div class="form-row">
+              <label for="course">ご希望コース</label>
+              <select id="course" name="course">
+                <option value="">選択してください</option>
+                <option>はじめてのプログラミング</option>
+                <option>ドリル</option>
+                <option>ステップアップ</option>
+                <option>はじめてのアプリ開発</option>
+                <option>コードプログラミング</option>
+                <option>まだ決めていない</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg contact__submit">無料体験を申し込む</button>
+          <p class="contact__note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="shell footer__inner">
+      <a href="#hero" class="footer__logo"><img src="img/logo.png" alt="テック・スマイル" width="144" height="96" /></a>
+      <nav class="footer__nav" aria-label="フッターナビ">
+        <a href="#about">テックスマイルとは</a>
+        <a href="#courses">コース・料金</a>
+        <a href="#faq">Q&amp;A</a>
+        <a href="news.html">お知らせ</a>
+        <a href="#access">アクセス</a>
+        <a href="#contact">無料体験</a>
+      </nav>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> テック・スマイル こどもプログラミング教室</p>
+  </footer>
+
+  <a href="#hero" class="to-top" id="toTop" aria-label="上へ戻る">↑</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
