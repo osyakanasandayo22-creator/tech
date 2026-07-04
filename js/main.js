@@ -15,6 +15,8 @@
   const toTop = document.getElementById("toTop");
   const floaters = Array.from(document.querySelectorAll(".js-float"));
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const mobileQuery = window.matchMedia("(max-width: 720px)");
+  function isMobileView() { return mobileQuery.matches; }
 
   /* --- Page Transitions --- */
   document.addEventListener("click", function (e) {
@@ -43,9 +45,11 @@
     header.classList.toggle("is-scrolled", y > 8);
     toTop.classList.toggle("is-visible", y > 600);
 
-    // ヘッダー：下スクロールで隠し、上スクロール（最上部以外でも）で表示
+    // ヘッダー：下スクロールで隠し、上スクロールで表示（スマホは固定のまま）
     const navOpen = nav && nav.classList.contains("is-open");
-    if (y <= 80 || navOpen) {
+    if (isMobileView()) {
+      header.classList.remove("is-hidden");
+    } else if (y <= 80 || navOpen) {
       header.classList.remove("is-hidden");
     } else if (y > lastY + 4) {
       header.classList.add("is-hidden");
@@ -54,7 +58,7 @@
     }
     lastY = y;
 
-    if (!reduceMotion) {
+    if (!reduceMotion && !isMobileView()) {
       for (const el of floaters) {
         const speed = parseFloat(el.dataset.speed || "0");
         el.style.transform = "translateY(" + y * speed + "px)";
