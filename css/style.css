@@ -577,11 +577,21 @@ ul, ol { list-style: none; }
 
   /* ---- About ---- */
   .about__catch { font-size: clamp(1.15rem, 4.5vw, 1.6rem); margin-bottom: 28px; }
-  .trio { grid-template-columns: repeat(2, 1fr); max-width: none; gap: 12px; }
-  .trio__card { padding: 22px 14px; }
-  .trio__icon { width: 64px; height: 64px; margin-bottom: 12px; }
-  .trio__icon svg { width: 34px; height: 34px; }
-  .trio__card h3 { font-size: 1.1rem; }
+  .trio { grid-template-columns: 1fr; max-width: none; gap: 10px; }
+  .trio__card {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 16px;
+    row-gap: 2px;
+    padding: 18px 16px;
+    text-align: left;
+    align-items: center;
+  }
+  .trio__icon { grid-row: 1 / 3; width: 60px; height: 60px; margin: 0; }
+  .trio__icon svg { width: 32px; height: 32px; }
+  .trio__card h3 { font-size: 1.05rem; margin-bottom: 0; }
+  .trio__card p { font-size: .88rem; line-height: 1.55; }
 
   /* ---- Courses ---- */
   .plans { grid-template-columns: 1fr; max-width: 360px; gap: 14px; }
@@ -623,7 +633,6 @@ ul, ol { list-style: none; }
   .toggle__save { display: none; }
   .logo { padding: 5px 10px; border-radius: 12px; }
   .logo img { height: 38px; width: auto; }
-  .trio { grid-template-columns: repeat(2, 1fr); }
   .plans { max-width: 100%; }
 }
 
