@@ -523,10 +523,16 @@ ul, ol { list-style: none; }
   .nav.is-open .nav__link::after { display: none; }
 
   /* ---- Hero ---- */
-  .hero { padding: 96px 0 56px; overflow: hidden; }
-  .hero__inner { position: relative; z-index: 5; }
+  .hero {
+    min-height: auto;
+    align-items: flex-start;
+    padding: 84px 0 36px;
+    overflow: hidden;
+  }
+  .hero__inner { position: relative; z-index: 5; width: 100%; }
   .hero__script { font-size: clamp(2.8rem, 12vw, 4.8rem); }
-  .hero__jp { font-size: clamp(1rem, 4vw, 1.3rem); }
+  .hero__jp { font-size: clamp(1rem, 4vw, 1.3rem); margin-top: 10px; }
+  .hero__actions { margin-top: 24px; }
   .hero__news { position: static; transform: none; margin: 28px auto 0; max-width: 100%; }
 
   /* ---- Sections ---- */
