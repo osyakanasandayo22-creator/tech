@@ -484,14 +484,14 @@ ul, ol { list-style: none; }
 
   /* ---- Header ---- */
   .header {
-    background: rgba(247, 246, 243, .97);
+    background: var(--white);
     backdrop-filter: none;
     border-bottom: 1px solid rgba(43, 43, 51, .08);
     transition: none;
   }
-  .header.is-scrolled { background: rgba(247, 246, 243, .98); }
+  .header.is-scrolled { background: var(--white); }
   .header.is-hidden { transform: none; }
-  body.subpage .header { backdrop-filter: none; }
+  body.subpage .header { background: var(--white); backdrop-filter: none; }
   .logo { padding: 6px 12px; background: var(--white); border-radius: 14px; }
   .logo img { height: 40px; }
 
