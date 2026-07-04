@@ -494,6 +494,9 @@ ul, ol { list-style: none; }
   .header.is-hidden {
     transform: none;
   }
+  body.subpage .header {
+    backdrop-filter: none;
+  }
   .logo {
     padding: 6px 12px;
     background: var(--white);
